@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Weather from "./Weather"
+import './Weather.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+      <Weather defaultCity="Nigeria"/>
+      <footer>
+        This project was created by Nwakaego Glory Nwaekpe and it is {""}
+      <a href='https://github.com/Nwakaego-Ego/weather'>Open Sourced </a>
+      on Github</footer>
+      </div>
     </div>
   );
 }
